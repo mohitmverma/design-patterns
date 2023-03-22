@@ -5,7 +5,7 @@ import observerPattern.observer.NotificationAlertObserver;
 import java.util.ArrayList;
 import java.util.List;
 
-public class IphoneStockObservableImpl implements StockObservable{
+public class IphoneStockObservable implements StockObservable{
 
     private List<NotificationAlertObserver> observerList = new ArrayList<>();
     private int count=0;

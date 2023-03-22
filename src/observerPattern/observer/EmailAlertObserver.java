@@ -2,12 +2,12 @@ package observerPattern.observer;
 
 import observerPattern.observable.StockObservable;
 
-public class EmailAlertObserverImpl implements NotificationAlertObserver {
+public class EmailAlertObserver implements NotificationAlertObserver {
 
     String emailId;
     StockObservable stockObservable;
 
-    public EmailAlertObserverImpl(String emailId, StockObservable observable) {
+    public EmailAlertObserver(String emailId, StockObservable observable) {
         this.emailId = emailId;
         stockObservable = observable;
     }

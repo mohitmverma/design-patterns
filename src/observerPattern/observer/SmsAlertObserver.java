@@ -2,12 +2,12 @@ package observerPattern.observer;
 
 import observerPattern.observable.StockObservable;
 
-public class SmsAlertObserverImpl implements NotificationAlertObserver {
+public class SmsAlertObserver implements NotificationAlertObserver {
 
     long mobileNumber;
     StockObservable stockObservable;
 
-    public SmsAlertObserverImpl(long mobileNumber, StockObservable stockObservable) {
+    public SmsAlertObserver(long mobileNumber, StockObservable stockObservable) {
         this.mobileNumber = mobileNumber;
         this.stockObservable = stockObservable;
     }
