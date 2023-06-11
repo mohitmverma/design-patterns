@@ -2,7 +2,7 @@ package singleton;
 
 public class SingletonSynchronized {
 
-    private static SingletonSynchronized instance;
+    private volatile static SingletonSynchronized instance;
 
     private SingletonSynchronized(){}
 
