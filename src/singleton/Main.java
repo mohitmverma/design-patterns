@@ -13,5 +13,9 @@ public class Main {
         SingletonSynchronized instance1 = SingletonSynchronized.getInstance();
         System.out.println(instance1);
 
+
+        Logger logger = Logger.LOGGER;
+        logger.info("mesk");
+
     }
 }

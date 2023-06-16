@@ -15,7 +15,7 @@ public class SingletonSynchronized {
     public static SingletonSynchronized getInstance() {
         if(instance == null) {
             synchronized (SingletonSynchronized.class) {
-                if(instance == null) {
+                if(instance == null) {                                      // double locking
                     instance = new SingletonSynchronized();
                 }
             }
